@@ -81,9 +81,9 @@ export const portfolioData = {
   },
   projectsIntro: {
     eyebrow: 'Proyectos',
-    title: 'Una línea de tiempo de colecciones construidas desde concepto, oficio y exploración visual.',
+    title: 'Colecciones construidas desde concepto, oficio y exploración visual.',
     description:
-      'Cada proyecto abre un universo propio. Explora la línea de tiempo y navega hacia el detalle de cada colección.',
+      'Cada proyecto abre un universo propio. Selecciona una colección para navegar hacia su página de detalle.',
   },
   projects: [
     {
@@ -133,26 +133,26 @@ export const portfolioData = {
       },
     },
     {
-      id: 'multiplicidad-del-yo',
-      title: 'Multiplicidad del yo',
-      imageFolder: 'multiplicidad del yo',
+      id: 'nubes-de-papel',
+      title: 'Nubes de papel',
+      imageFolder: 'nubes de papel',
       year: '2025',
-      category: 'Colección / Identidad',
+      category: 'Colección infantil',
       description:
-        'Colección que explora la identidad como un territorio cambiante, construido por capas, contrastes y gestos íntimos.',
+        'Colección infantil que interpreta ligereza, juego y fantasía desde un lenguaje visual delicado, limpio y contemporáneo.',
       details: [
-        'Aborda el yo como una composición múltiple donde conviven fuerza, vulnerabilidad y transformación.',
-        'Trabaja una narrativa visual basada en capas, presencia corporal y variaciones de carácter.',
-        'La propuesta conecta cuerpo, memoria y expresión personal desde una mirada editorial.',
+        'La colección traduce la imaginación infantil en formas suaves, proporciones delicadas y gestos lúdicos.',
+        'Su universo visual trabaja ligereza, volumen y una narrativa poética alrededor del vestir.',
+        'El proyecto busca equilibrar fantasía, claridad formal y sensibilidad de colección.',
       ],
       image: {
         src: '',
-        alt: 'Placeholder del proyecto Multiplicidad del yo',
+        alt: 'Placeholder del proyecto Nubes de papel',
         eyebrow: 'Proyecto 03',
-        label: 'Multiplicidad',
+        label: 'Nubes de papel',
         caption:
-          'Espacio para fotografía editorial, exploración de styling o narrativa visual.',
-        palette: ['#eee7df', '#c7b5a5', '#6f6258'],
+          'Espacio para fotografía de pasarela, detalle de colección o mood visual.',
+        palette: ['#f3eee9', '#d5c8b8', '#998571'],
       },
     },
     {
@@ -179,26 +179,26 @@ export const portfolioData = {
       },
     },
     {
-      id: 'nubes-de-papel',
-      title: 'Nubes de papel',
-      imageFolder: 'nubes de papel',
+      id: 'multiplicidad-del-yo',
+      title: 'Multiplicidad del yo',
+      imageFolder: 'multiplicidad del yo',
       year: '2025',
-      category: 'Colección infantil',
+      category: 'Colección / Identidad',
       description:
-        'Colección infantil que interpreta ligereza, juego y fantasía desde un lenguaje visual delicado, limpio y contemporáneo.',
+        'Colección que explora la identidad como un territorio cambiante, construido por capas, contrastes y gestos íntimos.',
       details: [
-        'La colección traduce la imaginación infantil en formas suaves, proporciones delicadas y gestos lúdicos.',
-        'Su universo visual trabaja ligereza, volumen y una narrativa poética alrededor del vestir.',
-        'El proyecto busca equilibrar fantasía, claridad formal y sensibilidad de colección.',
+        'Aborda el yo como una composición múltiple donde conviven fuerza, vulnerabilidad y transformación.',
+        'Trabaja una narrativa visual basada en capas, presencia corporal y variaciones de carácter.',
+        'La propuesta conecta cuerpo, memoria y expresión personal desde una mirada editorial.',
       ],
       image: {
         src: '',
-        alt: 'Placeholder del proyecto Nubes de papel',
+        alt: 'Placeholder del proyecto Multiplicidad del yo',
         eyebrow: 'Proyecto 05',
-        label: 'Nubes de papel',
+        label: 'Multiplicidad',
         caption:
-          'Espacio para fotografía de pasarela, detalle de colección o mood visual.',
-        palette: ['#f3eee9', '#d5c8b8', '#998571'],
+          'Espacio para fotografía editorial, exploración de styling o narrativa visual.',
+        palette: ['#eee7df', '#c7b5a5', '#6f6258'],
       },
     },
   ],

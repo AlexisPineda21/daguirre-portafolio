@@ -1,4 +1,3 @@
-import { ArrowRight } from 'lucide-react'
 import Container from '../components/Container'
 import PortfolioImage from '../components/PortfolioImage'
 import Reveal from '../components/Reveal'
@@ -26,22 +25,6 @@ function HeroSection({ hero }) {
               <p className="max-w-xl text-base leading-7 text-[color:var(--ink-soft)]">
                 {hero.description}
               </p>
-            </div>
-
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <a
-                href={hero.primaryCta.href}
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[color:var(--ink)] px-6 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.24em] text-white transition-transform duration-300 hover:-translate-y-0.5"
-              >
-                {hero.primaryCta.label}
-                <ArrowRight size={16} />
-              </a>
-              <a
-                href={hero.secondaryCta.href}
-                className="inline-flex items-center justify-center rounded-full border hairline px-6 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.24em] text-[color:var(--ink)] transition-all duration-300 hover:bg-white/60"
-              >
-                {hero.secondaryCta.label}
-              </a>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-3">
