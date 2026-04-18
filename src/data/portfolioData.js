@@ -90,6 +90,9 @@ export const portfolioData = {
       id: 'deconstruccion',
       title: 'Deconstrucción',
       imageFolder: 'deconstruccion',
+      coverImage: 'IMG_8844-2.jpg',
+      themeColor: '#840017',
+      themeTextColor: '#fff7ef',
       year: '2024',
       category: 'Pasarela / Concepto',
       description:
@@ -113,6 +116,9 @@ export const portfolioData = {
       id: 'entrelazados-en-el-tiempo',
       title: 'Entrelazados en el tiempo',
       imageFolder: 'entrelazados en el tiempo',
+      coverImage: '1-309.jpg',
+      themeColor: '#272F7A',
+      themeTextColor: '#f5f2ea',
       year: '2024',
       category: 'Colección / Enfoque social',
       description:
@@ -136,6 +142,9 @@ export const portfolioData = {
       id: 'nubes-de-papel',
       title: 'Nubes de papel',
       imageFolder: 'nubes de papel',
+      coverImage: 'ffc96f79-aa06-4e58-baf4-048bb53bbaee.JPG',
+      themeColor: '#F1D31E',
+      themeTextColor: '#1f1b17',
       year: '2025',
       category: 'Colección infantil',
       description:
@@ -159,6 +168,9 @@ export const portfolioData = {
       id: 'piel-viva',
       title: 'Piel Viva',
       imageFolder: 'piel viva',
+      coverImage: 'a0ec7ba5-7c59-4435-806a-6f41af272bb5.JPG',
+      themeColor: '#215732',
+      themeTextColor: '#f5f2ea',
       year: '2025',
       category: 'Biovestido / Innovación material',
       description:
@@ -182,6 +194,9 @@ export const portfolioData = {
       id: 'multiplicidad-del-yo',
       title: 'Multiplicidad del yo',
       imageFolder: 'multiplicidad del yo',
+      coverImage: '0177.jpg',
+      themeColor: '#840017',
+      themeTextColor: '#fff7ef',
       year: '2025',
       category: 'Colección / Identidad',
       description:

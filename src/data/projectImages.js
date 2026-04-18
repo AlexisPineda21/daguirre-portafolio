@@ -49,9 +49,34 @@ Object.values(collections).forEach((images) => {
   )
 })
 
+function normalizeFilename(filename = '') {
+  return filename
+    .toLowerCase()
+    .replace(/\.(jpg|jpeg|png|webp|avif)$/g, '')
+    .replace(/\s+/g, '')
+}
+
 export function getProjectImages(folder, projectTitle) {
   return (collections[folder] || []).map((image, index) => ({
     ...image,
     alt: `${projectTitle} - imagen ${index + 1}`,
   }))
+}
+
+export function getProjectCoverImage(folder, projectTitle, preferredFilename) {
+  const images = getProjectImages(folder, projectTitle)
+
+  if (!preferredFilename) {
+    return images[0]
+  }
+
+  const normalizedPreferred = normalizeFilename(preferredFilename)
+  const exactMatch = images.find(
+    (image) => normalizeFilename(image.filename) === normalizedPreferred,
+  )
+  const partialMatch = images.find((image) =>
+    normalizeFilename(image.filename).includes(normalizedPreferred),
+  )
+
+  return exactMatch || partialMatch || images[0]
 }
