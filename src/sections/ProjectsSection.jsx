@@ -25,14 +25,12 @@ function ProjectsSection({ sectionIntro, projects }) {
               project.title,
               project.coverImage,
             )
-            const textColor = project.themeTextColor || '#fff7ef'
 
             return (
               <Reveal key={project.id} delay={0.06 * index}>
                 <a
                   href={getProjectPath(project.id)}
-                  className="group block h-full overflow-hidden rounded-[1.8rem] border border-black/10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_34px_90px_rgba(68,48,29,0.18)]"
-                  style={{ backgroundColor: project.themeColor }}
+                  className="group block h-full overflow-hidden rounded-[1.8rem] border hairline glass-panel transition-all duration-500 hover:-translate-y-1 hover:bg-white/70 hover:shadow-[0_34px_90px_rgba(68,48,29,0.14)]"
                 >
                   <div className="relative m-3 aspect-[4/5] overflow-hidden rounded-[1.35rem] bg-[rgba(255,251,246,0.24)]">
                     {cover ? (
@@ -74,11 +72,11 @@ function ProjectsSection({ sectionIntro, projects }) {
                       </h3>
                     </div>
                   </div>
-                  <div className="px-5 pb-6 pt-2" style={{ color: textColor }}>
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] opacity-80">
+                  <div className="px-5 pb-6 pt-2">
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[color:var(--accent)]">
                       {project.category}
                     </p>
-                    <p className="mt-3 text-sm leading-6 opacity-85">
+                    <p className="mt-3 text-sm leading-6 text-[color:var(--ink-soft)]">
                       Ver proyecto completo
                     </p>
                   </div>
