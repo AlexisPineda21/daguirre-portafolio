@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Daniela Aguirre</title>
+  <rect width="64" height="64" rx="18" fill="#f5efe7" />
+  <rect x="7" y="7" width="50" height="50" rx="14" fill="none" stroke="#a58a72" stroke-width="1.5" />
+  <path d="M19 44V20h10.3c7 0 11.4 3.8 11.4 11.7 0 8-4.4 12.3-11.5 12.3H19Zm5.4-4.7h4.2c4.4 0 6.8-2.4 6.8-7.4 0-4.8-2.5-6.9-6.8-6.9h-4.2v14.3Z" fill="#2a241f" />
+  <path d="M36.7 44 45 20h4.6l8.4 24h-5.7l-1.6-4.8h-8.2L40.8 44h-4.1Zm7.1-8.8h5.5l-2.8-8.4-2.7 8.4Z" fill="#2a241f" />
+</svg>
