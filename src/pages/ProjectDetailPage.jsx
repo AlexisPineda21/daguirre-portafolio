@@ -18,7 +18,7 @@ function ProjectDetailPage({ project, previousProject, nextProject }) {
           <Reveal>
             <a
               href="/#proyectos"
-              className="inline-flex items-center gap-2 rounded-full border hairline bg-white/35 px-5 py-3 text-[0.74rem] font-semibold uppercase tracking-[0.24em] text-[color:var(--ink)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/70"
+              className="inline-flex items-center gap-2 rounded-full border border-[rgba(31,27,23,0.12)] bg-white px-5 py-3 text-[0.74rem] font-semibold uppercase tracking-[0.24em] text-[color:var(--ink)] shadow-[0_16px_44px_rgba(31,27,23,0.08)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[color:var(--panel-strong)]"
             >
               <ArrowLeft size={16} />
               Volver a proyectos
