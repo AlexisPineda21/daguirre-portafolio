@@ -10,7 +10,10 @@ function ProjectDetailPage({ project, previousProject, nextProject }) {
 
   return (
     <main>
-      <section className="pb-16 pt-10 sm:pb-24 sm:pt-16 lg:pb-28 lg:pt-20">
+      <section
+        className="min-h-[calc(100vh-96px)] pb-16 pt-10 sm:pb-24 sm:pt-16 lg:pb-28 lg:pt-20"
+        style={{ backgroundColor: project.themeColor }}
+      >
         <Container>
           <Reveal>
             <a
@@ -22,13 +25,10 @@ function ProjectDetailPage({ project, previousProject, nextProject }) {
             </a>
           </Reveal>
 
-          <div
-            className="mt-10 overflow-hidden rounded-[2.25rem] border border-black/10 p-4 sm:p-6 lg:p-8"
-            style={{ backgroundColor: project.themeColor }}
-          >
+          <div className="mt-10">
             <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
               <Reveal className="space-y-8">
-                <div className="rounded-[2rem] bg-[rgba(255,251,246,0.9)] p-6 sm:p-8">
+                <div className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8">
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="rounded-full border hairline px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[color:var(--accent)]">
                       {project.year}
@@ -46,7 +46,7 @@ function ProjectDetailPage({ project, previousProject, nextProject }) {
                   </p>
                 </div>
 
-                <div className="rounded-[2rem] border hairline bg-[rgba(255,251,246,0.9)] p-6 sm:p-8">
+                <div className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8">
                   <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
                     Concepto del proyecto
                   </p>
