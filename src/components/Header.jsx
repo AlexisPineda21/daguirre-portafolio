@@ -6,7 +6,7 @@ function Header({ name, navigation, cta }) {
       <Container className="py-4">
         <div className="flex items-center justify-between gap-4">
           <a
-            href="#inicio"
+            href="/"
             className="flex items-center gap-3 text-[color:var(--ink)] transition-colors duration-300 hover:text-[color:var(--accent)]"
           >
             <span className="font-display text-[1.9rem] leading-none">DA</span>

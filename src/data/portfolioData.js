@@ -1,9 +1,9 @@
 export const portfolioData = {
   navigation: [
-    { label: 'Sobre mí', href: '#sobre-mi' },
-    { label: 'Proyectos', href: '#proyectos' },
-    { label: 'Reconocimientos', href: '#reconocimientos' },
-    { label: 'Contacto', href: '#contacto' },
+    { label: 'Sobre mí', href: '/#sobre-mi' },
+    { label: 'Proyectos', href: '/#proyectos' },
+    { label: 'Reconocimientos', href: '/#reconocimientos' },
+    { label: 'Contacto', href: '/#contacto' },
   ],
   hero: {
     name: 'Daniela Aguirre',
@@ -15,11 +15,11 @@ export const portfolioData = {
       'Diseña proyectos que articulan investigación, narrativa visual y desarrollo de colecciones con intención estratégica.',
     primaryCta: {
       label: 'Ver proyectos',
-      href: '#proyectos',
+      href: '/#proyectos',
     },
     secondaryCta: {
       label: 'Contactar',
-      href: '#contacto',
+      href: '/#contacto',
     },
     image: {
       src: '',
