@@ -87,6 +87,7 @@ export const portfolioData = {
   projects: [
     {
       title: 'Deconstrucción',
+      imageFolder: 'deconstruccion',
       year: '2024',
       category: 'Pasarela / Concepto',
       description:
@@ -107,6 +108,7 @@ export const portfolioData = {
     },
     {
       title: 'Entrelazados en el tiempo',
+      imageFolder: 'entrelazados en el tiempo',
       year: '2024',
       category: 'Colección / Enfoque social',
       description:
@@ -126,7 +128,29 @@ export const portfolioData = {
       },
     },
     {
+      title: 'Multiplicidad del yo',
+      imageFolder: 'multiplicidad del yo',
+      year: '2025',
+      category: 'Colección / Identidad',
+      description:
+        'Colección que explora la identidad como un territorio cambiante, construido por capas, contrastes y gestos íntimos. Una propuesta preliminar que conecta cuerpo, memoria y expresión personal desde una mirada editorial.',
+      details: [
+        'Proyecto incorporado como nueva colección dentro del portafolio profesional.',
+        'Descripción inicial pendiente de ajuste con información final del proceso creativo.',
+      ],
+      image: {
+        src: '',
+        alt: 'Placeholder del proyecto Multiplicidad del yo',
+        eyebrow: 'Proyecto 03',
+        label: 'Multiplicidad',
+        caption:
+          'Espacio para fotografía editorial, exploración de styling o narrativa visual.',
+        palette: ['#eee7df', '#c7b5a5', '#6f6258'],
+      },
+    },
+    {
       title: 'Piel Viva',
+      imageFolder: 'piel viva',
       year: '2025',
       category: 'Biovestido / Innovación material',
       description:
@@ -138,7 +162,7 @@ export const portfolioData = {
       image: {
         src: '',
         alt: 'Placeholder del proyecto Piel Viva',
-        eyebrow: 'Proyecto 03',
+        eyebrow: 'Proyecto 04',
         label: 'Piel Viva',
         caption:
           'Espacio para imagen de biovestido, macro de superficie o proceso experimental.',
@@ -148,6 +172,7 @@ export const portfolioData = {
     },
     {
       title: 'Nubes de papel',
+      imageFolder: 'nubes de papel',
       year: '2025',
       category: 'Colección infantil / Pasarela',
       description:
@@ -159,7 +184,7 @@ export const portfolioData = {
       image: {
         src: '',
         alt: 'Placeholder del proyecto Nubes de papel',
-        eyebrow: 'Proyecto 04',
+        eyebrow: 'Proyecto 05',
         label: 'Nubes de papel',
         caption:
           'Espacio para fotografía de pasarela, detalle de colección o mood visual.',

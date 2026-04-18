@@ -1,7 +1,8 @@
 import Container from '../components/Container'
-import PortfolioImage from '../components/PortfolioImage'
+import ProjectImageCarousel from '../components/ProjectImageCarousel'
 import Reveal from '../components/Reveal'
 import SectionIntro from '../components/SectionIntro'
+import { getProjectImages } from '../data/projectImages'
 
 function ProjectsSection({ sectionIntro, projects }) {
   return (
@@ -19,6 +20,10 @@ function ProjectsSection({ sectionIntro, projects }) {
         <div className="space-y-8 lg:space-y-12">
           {projects.map((project, index) => {
             const isReversed = index % 2 === 1
+            const projectImages = getProjectImages(
+              project.imageFolder,
+              project.title,
+            )
 
             return (
               <Reveal key={project.title} delay={0.08 * index}>
@@ -28,8 +33,10 @@ function ProjectsSection({ sectionIntro, projects }) {
                       isReversed ? 'lg:order-2' : ''
                     }`}
                   >
-                    <PortfolioImage
-                      image={project.image}
+                    <ProjectImageCarousel
+                      images={projectImages}
+                      fallbackImage={project.image}
+                      projectTitle={project.title}
                       className="aspect-[16/11] min-h-[280px] sm:min-h-[380px]"
                     />
                   </div>

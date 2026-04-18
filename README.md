@@ -66,11 +66,27 @@ Desde ese archivo puedes actualizar:
 
 ## Imágenes
 
-La primera versión usa placeholders editoriales elegantes para mantener el sitio visualmente sólido sin depender de fotografías reales. Cuando quieras reemplazarlos:
+Las galerías de proyectos se alimentan desde la carpeta `images/` ubicada en la raíz del proyecto. Cada subcarpeta representa una colección y se conecta con el campo `imageFolder` en `src/data/portfolioData.js`.
 
-1. Agrega tus imágenes dentro de `src/assets/`
-2. Importa o referencia esos archivos desde `src/data/portfolioData.js`
-3. Asigna el `src` correspondiente en cada bloque de imagen
+Estructura esperada:
+
+```text
+images/
+  deconstruccion/
+  entrelazados en el tiempo/
+  multiplicidad del yo/
+  nubes de papel/
+  piel viva/
+```
+
+Para agregar una nueva colección:
+
+1. Crea una nueva subcarpeta dentro de `images/`.
+2. Agrega las fotografías de la colección.
+3. Crea o actualiza el proyecto en `src/data/portfolioData.js`.
+4. Asigna el nombre exacto de la carpeta en `imageFolder`.
+
+Si una colección no tiene imágenes, el sitio mostrará el placeholder editorial definido en el bloque `image`.
 
 ## Despliegue en Vercel
 
