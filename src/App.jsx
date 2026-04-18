@@ -3,11 +3,9 @@ import Header from './components/Header'
 import { portfolioData } from './data/portfolioData'
 import AboutSection from './sections/AboutSection'
 import ContactSection from './sections/ContactSection'
-import EducationSection from './sections/EducationSection'
 import HeroSection from './sections/HeroSection'
-import LanguagesSection from './sections/LanguagesSection'
 import ProjectsSection from './sections/ProjectsSection'
-import SkillsSection from './sections/SkillsSection'
+import RecognitionsSection from './sections/RecognitionsSection'
 
 function App() {
   return (
@@ -22,16 +20,19 @@ function App() {
 
       <main>
         <HeroSection hero={portfolioData.hero} />
-        <AboutSection about={portfolioData.about} />
+        <AboutSection
+          about={portfolioData.about}
+          education={portfolioData.education}
+          skills={portfolioData.skills}
+          languages={portfolioData.languages}
+        />
         <ProjectsSection
           sectionIntro={portfolioData.projectsIntro}
           projects={portfolioData.projects}
         />
-        <EducationSection education={portfolioData.education} />
-        <SkillsSection skills={portfolioData.skills} />
-        <LanguagesSection
-          sectionIntro={portfolioData.languagesIntro}
-          languages={portfolioData.languages}
+        <RecognitionsSection
+          sectionIntro={portfolioData.recognitionsIntro}
+          recognitions={portfolioData.recognitions}
         />
         <ContactSection contact={portfolioData.contact} />
       </main>

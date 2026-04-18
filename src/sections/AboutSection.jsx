@@ -2,24 +2,38 @@ import Container from '../components/Container'
 import Reveal from '../components/Reveal'
 import SectionIntro from '../components/SectionIntro'
 
-function AboutSection({ about }) {
+function AboutSection({ about, education, skills, languages }) {
   return (
     <section id="sobre-mi" className="scroll-mt-32 py-16 sm:py-24 lg:py-28">
       <Container>
-        <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-          <Reveal>
-            <SectionIntro
-              eyebrow={about.eyebrow}
-              title={about.title}
-              description={about.description}
-            />
-            <p className="mt-6 max-w-xl border-l border-[color:var(--line)] pl-5 text-base leading-7 text-[color:var(--ink-soft)] sm:text-lg">
-              {about.note}
+        <Reveal>
+          <SectionIntro
+            eyebrow={about.eyebrow}
+            title={about.title}
+            description={about.description}
+            className="mb-10 lg:mb-14"
+          />
+        </Reveal>
+
+        <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+          <Reveal className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:p-10">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+              Historia
             </p>
+            <div className="mt-8 space-y-6">
+              {about.story.map((paragraph) => (
+                <p
+                  key={paragraph}
+                  className="max-w-2xl text-base leading-8 text-[color:var(--ink-soft)] sm:text-lg"
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </Reveal>
 
           <div className="grid gap-5">
-            {about.focusAreas.map((item, index) => (
+            {about.pillars.map((item, index) => (
               <Reveal key={item.title} delay={0.08 * (index + 1)}>
                 <article className="glass-panel rounded-[1.8rem] border hairline p-6 sm:p-8">
                   <div className="flex items-start gap-5">
@@ -39,6 +53,77 @@ function AboutSection({ about }) {
               </Reveal>
             ))}
           </div>
+        </div>
+
+        <div className="mt-6 grid gap-6 lg:grid-cols-12">
+          <Reveal className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:col-span-5">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+              Educación
+            </p>
+            <h3 className="font-display mt-6 text-4xl leading-none text-[color:var(--ink)]">
+              {education.degree}
+            </h3>
+            <p className="mt-5 text-base leading-7 text-[color:var(--ink-soft)]">
+              {education.institution} - {education.location}. Actualmente cursa
+              el {education.stage.toLowerCase()} con promedio{' '}
+              {education.average}, y un {education.emphasis.toLowerCase()}.
+            </p>
+          </Reveal>
+
+          <Reveal
+            delay={0.08}
+            className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:col-span-4"
+          >
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+              Habilidades
+            </p>
+            <div className="mt-6 space-y-6">
+              {skills.groups.map((group) => (
+                <div key={group.title}>
+                  <h3 className="font-display text-3xl leading-none text-[color:var(--ink)]">
+                    {group.title}
+                  </h3>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {group.items.map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full border hairline bg-white/35 px-3 py-1.5 text-xs leading-5 text-[color:var(--ink-soft)]"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+
+          <Reveal
+            delay={0.16}
+            className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:col-span-3"
+          >
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+              Idiomas
+            </p>
+            <div className="mt-6 space-y-5">
+              {languages.map((item) => (
+                <div
+                  key={item.language}
+                  className="border-t border-[color:var(--line)] pt-5 first:border-0 first:pt-0"
+                >
+                  <h3 className="font-display text-3xl leading-none text-[color:var(--ink)]">
+                    {item.language}
+                  </h3>
+                  <p className="mt-2 text-sm font-semibold text-[color:var(--ink)]">
+                    {item.level}
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[color:var(--ink-soft)]">
+                    {item.note}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </Container>
     </section>

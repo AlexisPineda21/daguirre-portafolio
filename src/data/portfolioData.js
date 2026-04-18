@@ -1,17 +1,14 @@
 export const portfolioData = {
   navigation: [
-    { label: 'Inicio', href: '#inicio' },
     { label: 'Sobre mí', href: '#sobre-mi' },
     { label: 'Proyectos', href: '#proyectos' },
-    { label: 'Educación', href: '#educacion' },
-    { label: 'Habilidades', href: '#habilidades' },
-    { label: 'Idiomas', href: '#idiomas' },
+    { label: 'Reconocimientos', href: '#reconocimientos' },
     { label: 'Contacto', href: '#contacto' },
   ],
   hero: {
     name: 'Daniela Aguirre',
     role: 'Diseñadora de modas',
-    badge: 'Portafolio profesional',
+    badge: 'Portafolio',
     tagline:
       'Moda con visión conceptual, sensibilidad material y una mirada contemporánea sobre la creación.',
     description:
@@ -35,57 +32,62 @@ export const portfolioData = {
     },
     highlights: [
       {
-        title: 'Colombiamoda',
-        value: '2024 / 2025',
+        title: 'Formación',
+        value: 'Último semestre',
         description:
-          'Participaciones con la Universidad de Medellín en la pasarela Futuros.',
+          'Diseño y Gestión de la Moda y el Textil en la Universidad de Medellín.',
       },
       {
-        title: 'RAD Social',
-        value: '2024 / 2025',
+        title: 'Enfoque',
+        value: 'Moda + gestión',
         description:
-          'Presentación con enfoque social y publicación destacada en gRADo.',
+          'Creación de colecciones, investigación, marca y proyectos creativos.',
       },
       {
-        title: 'Lápiz de Acero',
-        value: '2026',
+        title: 'Base',
+        value: 'Medellín',
         description:
-          'Nominación en la categoría Moda por un proyecto de biovestidos.',
+          'Una mirada local con proyección profesional dentro del sector moda.',
       },
     ],
   },
   about: {
     eyebrow: 'Sobre mí',
-    title: 'Diseño de moda con criterio, investigación y dirección creativa.',
+    title: 'Una diseñadora emergente con criterio conceptual, sensibilidad textil y visión de marca.',
     description:
-      'Daniela Aguirre es estudiante de último semestre de Diseño y Gestión de la Moda y el Textil, con énfasis en la creación de empresas de base creativa. Tiene habilidades en investigación, conceptualización, desarrollo de colecciones y gestión de proyectos.',
-    note: 'Su enfoque combina sensibilidad estética, estructura conceptual y una lectura contemporánea del vestir.',
-    focusAreas: [
+      'Daniela Aguirre es estudiante de último semestre de Diseño y Gestión de la Moda y el Textil, con énfasis en la creación de empresas de base creativa.',
+    story: [
+      'Su proceso parte de la investigación, la observación del contexto y la construcción de narrativas visuales que conectan cuerpo, materialidad e identidad.',
+      'Desde su formación en la Universidad de Medellín, ha fortalecido una mirada integral que une desarrollo de colecciones, gestión de proyectos creativos y pensamiento estratégico aplicado a la moda.',
+      'Su perfil combina precisión técnica, comunicación clara y una sensibilidad contemporánea para construir propuestas con intención estética y coherencia conceptual.',
+    ],
+    pillars: [
       {
         title: 'Investigación y concepto',
         description:
-          'Construcción de propuestas a partir de observación, análisis y narrativa visual.',
+          'Construcción de propuestas a partir de observación, análisis de tendencias, referentes culturales y narrativa visual.',
       },
       {
         title: 'Colecciones con identidad',
         description:
-          'Desarrollo de proyectos coherentes en silueta, materiales, intención y lenguaje.',
+          'Desarrollo de proyectos coherentes en silueta, materiales, intención, styling y lenguaje de marca.',
       },
       {
         title: 'Gestión creativa',
         description:
-          'Planificación de procesos, organización de entregables y visión estratégica de marca.',
+          'Planificación de procesos, organización de entregables y coordinación de proyectos con enfoque profesional.',
       },
     ],
   },
   projectsIntro: {
-    eyebrow: 'Proyectos destacados',
-    title: 'Colecciones y propuestas que traducen concepto, oficio y proyección profesional.',
+    eyebrow: 'Proyectos',
+    title: 'Una línea de tiempo de colecciones construidas desde concepto, oficio y exploración visual.',
     description:
-      'Una selección de proyectos que evidencian exploración formal, sensibilidad material y presencia en plataformas relevantes del diseño y la moda.',
+      'Cada proyecto abre un universo propio. Explora la línea de tiempo y navega hacia el detalle de cada colección.',
   },
   projects: [
     {
+      id: 'deconstruccion',
       title: 'Deconstrucción',
       imageFolder: 'deconstruccion',
       year: '2024',
@@ -93,8 +95,9 @@ export const portfolioData = {
       description:
         'Exploración de siluetas fragmentadas y construcción textil desde la transformación de la prenda, con una mirada experimental y contemporánea.',
       details: [
-        'Participación en la pasarela “Futuros” de la Universidad de Medellín.',
-        'Presentado en Colombiamoda 2024.',
+        'Trabaja la prenda como una estructura abierta, capaz de ser reinterpretada desde cortes, capas y desplazamientos.',
+        'Propone una lectura visual donde la forma se desmonta para revelar nuevas posibilidades de composición.',
+        'Su lenguaje se apoya en contrastes, tensión formal y una narrativa de reconstrucción estética.',
       ],
       image: {
         src: '',
@@ -107,6 +110,7 @@ export const portfolioData = {
       },
     },
     {
+      id: 'entrelazados-en-el-tiempo',
       title: 'Entrelazados en el tiempo',
       imageFolder: 'entrelazados en el tiempo',
       year: '2024',
@@ -114,8 +118,9 @@ export const portfolioData = {
       description:
         'Propuesta que conecta memoria, tejido social e identidad a través de una narrativa sensible y una lectura del diseño como herramienta de conversación.',
       details: [
-        'Presentación de la colección en una charla sobre proyectos con enfoque social.',
-        'Participación en RAD Social 2024 y su aporte al diseño.',
+        'La colección se construye desde la relación entre memoria, vínculo y materialidad.',
+        'Explora el acto de entrelazar como gesto simbólico y como recurso visual dentro de la prenda.',
+        'Su intención es traducir historias colectivas en un lenguaje de moda cercano, sensible y contemporáneo.',
       ],
       image: {
         src: '',
@@ -128,15 +133,17 @@ export const portfolioData = {
       },
     },
     {
+      id: 'multiplicidad-del-yo',
       title: 'Multiplicidad del yo',
       imageFolder: 'multiplicidad del yo',
       year: '2025',
       category: 'Colección / Identidad',
       description:
-        'Colección que explora la identidad como un territorio cambiante, construido por capas, contrastes y gestos íntimos. Una propuesta preliminar que conecta cuerpo, memoria y expresión personal desde una mirada editorial.',
+        'Colección que explora la identidad como un territorio cambiante, construido por capas, contrastes y gestos íntimos.',
       details: [
-        'Proyecto incorporado como nueva colección dentro del portafolio profesional.',
-        'Descripción inicial pendiente de ajuste con información final del proceso creativo.',
+        'Aborda el yo como una composición múltiple donde conviven fuerza, vulnerabilidad y transformación.',
+        'Trabaja una narrativa visual basada en capas, presencia corporal y variaciones de carácter.',
+        'La propuesta conecta cuerpo, memoria y expresión personal desde una mirada editorial.',
       ],
       image: {
         src: '',
@@ -149,15 +156,17 @@ export const portfolioData = {
       },
     },
     {
+      id: 'piel-viva',
       title: 'Piel Viva',
       imageFolder: 'piel viva',
       year: '2025',
       category: 'Biovestido / Innovación material',
       description:
-        'Investigación sobre biovestidos y superficies vivas que propone una relación entre moda, naturaleza y experimentación material desde una perspectiva de diseño colombiano contemporáneo.',
+        'Investigación sobre biovestidos y superficies vivas que propone una relación entre moda, naturaleza y experimentación material.',
       details: [
-        'Vestuario seleccionado como proyecto destacado de diseño colombiano en la plataforma gRADo de RAD Social 2025.',
-        'Participación en Colombiamoda 2025 como biovestido con crecimiento de plantas sobre la tela.',
+        'Explora la posibilidad de que la prenda funcione como una superficie viva y cambiante.',
+        'Relaciona cuerpo, textil y naturaleza desde una perspectiva experimental del vestir.',
+        'Su desarrollo material propone una conversación entre diseño, cuidado y transformación orgánica.',
       ],
       image: {
         src: '',
@@ -168,18 +177,19 @@ export const portfolioData = {
           'Espacio para imagen de biovestido, macro de superficie o proceso experimental.',
         palette: ['#ebe3d9', '#b8a38e', '#5f7155'],
       },
-      note: 'Este universo de biovestidos también derivó en una nominación a los Premios Lápiz de Acero 2026 en la categoría Moda.',
     },
     {
+      id: 'nubes-de-papel',
       title: 'Nubes de papel',
       imageFolder: 'nubes de papel',
       year: '2025',
-      category: 'Colección infantil / Pasarela',
+      category: 'Colección infantil',
       description:
         'Colección infantil que interpreta ligereza, juego y fantasía desde un lenguaje visual delicado, limpio y contemporáneo.',
       details: [
-        'Participación en la pasarela “Futuros” de la Universidad de Medellín.',
-        'Presentado en Colombiamoda 2025 como colección infantil.',
+        'La colección traduce la imaginación infantil en formas suaves, proporciones delicadas y gestos lúdicos.',
+        'Su universo visual trabaja ligereza, volumen y una narrativa poética alrededor del vestir.',
+        'El proyecto busca equilibrar fantasía, claridad formal y sensibilidad de colección.',
       ],
       image: {
         src: '',
@@ -192,11 +202,58 @@ export const portfolioData = {
       },
     },
   ],
+  recognitionsIntro: {
+    eyebrow: 'Reconocimientos',
+    title: 'Hitos que reflejan proyección, presencia en escenarios de moda y validación del proceso creativo.',
+    description:
+      'Una selección de participaciones, publicaciones y nominaciones que acompañan el crecimiento profesional de Daniela.',
+  },
+  recognitions: [
+    {
+      year: '2024',
+      title: 'Colombiamoda 2024',
+      project: 'Deconstrucción',
+      description:
+        'Participación en la pasarela “Futuros” de la Universidad de Medellín.',
+    },
+    {
+      year: '2024',
+      title: 'RAD Social 2024',
+      project: 'Entrelazados en el tiempo',
+      description:
+        'Presentación de la colección en una charla sobre proyectos con enfoque social y su aporte al diseño.',
+    },
+    {
+      year: '2025',
+      title: 'gRADo de RAD Social 2025',
+      project: 'Piel Viva',
+      description:
+        'Selección del vestuario como proyecto destacado de diseño colombiano, publicado en la plataforma gRADo.',
+    },
+    {
+      year: '2025',
+      title: 'Colombiamoda 2025',
+      project: 'Piel Viva',
+      description:
+        'Participación como biovestido con crecimiento de plantas sobre la tela.',
+    },
+    {
+      year: '2025',
+      title: 'Colombiamoda 2025',
+      project: 'Nubes de papel',
+      description:
+        'Participación en la pasarela “Futuros” de la Universidad de Medellín como colección infantil.',
+    },
+    {
+      year: '2026',
+      title: 'Premios Lápiz de Acero 2026',
+      project: 'Biovestidos',
+      description:
+        'Nominación en la categoría Moda por un proyecto de biovestidos.',
+    },
+  ],
   education: {
     eyebrow: 'Educación',
-    title: 'Formación académica orientada al diseño y la gestión creativa.',
-    description:
-      'Un recorrido universitario que integra pensamiento de diseño, desarrollo de producto y visión empresarial aplicada al sector moda.',
     institution: 'Universidad de Medellín',
     location: 'Medellín, Colombia',
     degree: 'Diseño y Gestión de la Moda y el Textil',
@@ -205,10 +262,6 @@ export const portfolioData = {
     emphasis: 'Énfasis en creación de empresas de base creativa',
   },
   skills: {
-    eyebrow: 'Habilidades',
-    title: 'Herramientas para desarrollar proyectos con claridad, sensibilidad y estructura.',
-    description:
-      'Capacidades técnicas y humanas que fortalecen el proceso creativo, la colaboración y la materialización de propuestas.',
     groups: [
       {
         title: 'Habilidades técnicas',
@@ -234,12 +287,6 @@ export const portfolioData = {
         ],
       },
     ],
-  },
-  languagesIntro: {
-    eyebrow: 'Idiomas',
-    title: 'Comunicación clara en contextos locales e internacionales.',
-    description:
-      'Capacidad para desenvolverse en conversaciones profesionales y académicas dentro del entorno creativo.',
   },
   languages: [
     {
