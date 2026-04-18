@@ -5,7 +5,8 @@ import {
   useInView,
   useReducedMotion,
 } from 'framer-motion'
-import { ChevronLeft, ChevronRight, Pause } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Maximize2, Pause } from 'lucide-react'
+import ImageLightbox from './ImageLightbox'
 import PortfolioImage from './PortfolioImage'
 
 const MotionImg = motion.img
@@ -22,10 +23,11 @@ function ProjectImageCarousel({
   const [activeIndex, setActiveIndex] = useState(0)
   const [isHovered, setIsHovered] = useState(false)
   const [hasFocusWithin, setHasFocusWithin] = useState(false)
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false)
 
   const hasImages = images.length > 0
   const hasMultipleImages = images.length > 1
-  const isPaused = isHovered || hasFocusWithin
+  const isPaused = isHovered || hasFocusWithin || isLightboxOpen
 
   useEffect(() => {
     if (!hasMultipleImages || isPaused || !isInView) {
@@ -80,19 +82,29 @@ function ProjectImageCarousel({
       onFocus={() => setHasFocusWithin(true)}
       onBlur={handleBlur}
     >
+      <img
+        src={activeImage.src}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full scale-110 object-cover opacity-28 blur-2xl"
+        decoding="async"
+        loading="lazy"
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,251,246,0.78),rgba(210,198,184,0.42)),radial-gradient(circle_at_center,rgba(255,255,255,0.48),transparent_54%)]" />
+
       <AnimatePresence mode="wait" initial={false}>
         <MotionImg
           key={activeImage.src}
           src={activeImage.src}
           alt={activeImage.alt}
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-contain p-4 sm:p-6"
           decoding="async"
           loading="lazy"
           {...motionProps}
         />
       </AnimatePresence>
 
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,12,10,0.08)_0%,rgba(15,12,10,0)_38%,rgba(15,12,10,0.45)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,12,10,0.04)_0%,rgba(15,12,10,0)_38%,rgba(15,12,10,0.28)_100%)]" />
 
       {hasMultipleImages ? (
         <>
@@ -102,12 +114,24 @@ function ProjectImageCarousel({
               {String(images.length).padStart(2, '0')}
             </div>
 
-            {isPaused ? (
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-black/20 px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-white/90 backdrop-blur-md">
-                <Pause size={12} />
-                Pausado
-              </div>
-            ) : null}
+            <div className="flex items-center gap-2">
+              {isPaused ? (
+                <div className="hidden items-center gap-2 rounded-full border border-white/30 bg-black/20 px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-white/90 backdrop-blur-md sm:inline-flex">
+                  <Pause size={12} />
+                  Pausado
+                </div>
+              ) : null}
+
+              <button
+                type="button"
+                className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-black/20 px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-white/90 backdrop-blur-md transition-colors duration-300 hover:bg-black/32 focus:outline-none focus:ring-2 focus:ring-white/70"
+                aria-label={`Expandir imagen de ${projectTitle}`}
+                onClick={() => setIsLightboxOpen(true)}
+              >
+                <span className="hidden sm:inline">Expandir</span>
+                <Maximize2 size={13} />
+              </button>
+            </div>
           </div>
 
           <div className="absolute inset-x-4 top-1/2 flex -translate-y-1/2 items-center justify-between">
@@ -148,9 +172,34 @@ function ProjectImageCarousel({
         </>
       ) : null}
 
+      {!hasMultipleImages ? (
+        <div className="absolute right-4 top-4">
+          <button
+            type="button"
+            className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-black/20 px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-white/90 backdrop-blur-md transition-colors duration-300 hover:bg-black/32 focus:outline-none focus:ring-2 focus:ring-white/70"
+            aria-label={`Expandir imagen de ${projectTitle}`}
+            onClick={() => setIsLightboxOpen(true)}
+          >
+            <span className="hidden sm:inline">Expandir</span>
+            <Maximize2 size={13} />
+          </button>
+        </div>
+      ) : null}
+
       <div className="absolute bottom-5 left-5 rounded-full border border-white/25 bg-black/18 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/90 backdrop-blur-md">
         {projectTitle}
       </div>
+
+      {isLightboxOpen ? (
+        <ImageLightbox
+          images={images}
+          activeIndex={activeIndex}
+          title={projectTitle}
+          onClose={() => setIsLightboxOpen(false)}
+          onPrevious={goToPrevious}
+          onNext={goToNext}
+        />
+      ) : null}
     </div>
   )
 }
