@@ -117,7 +117,7 @@ export const portfolioData = {
       title: 'Entrelazados en el tiempo',
       imageFolder: 'entrelazados en el tiempo',
       coverImage: '1-309.jpg',
-      themeColor: '#1466C3',
+      themeColor: '#2174d4',
       themeTextColor: '#f5f2ea',
       year: '2024',
       category: 'Colección / Enfoque social',
