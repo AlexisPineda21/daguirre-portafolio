@@ -10,9 +10,9 @@ export const portfolioData = {
     role: 'Diseñadora de modas',
     badge: 'Portafolio',
     tagline:
-      'Moda con visión conceptual, sensibilidad material y una mirada contemporánea sobre la creación.',
+      'Moda con enfoque conceptual y sensibilidad material, entendida como un medio para pensar y comunicar ideas.',
     description:
-      'Diseña proyectos que articulan investigación, narrativa visual y desarrollo de colecciones con intención estratégica.',
+      'Desarrollo proyectos que conectan investigación, narrativa y creación, dando lugar a conceptos e ideas que se traducen en piezas con significado.',
     primaryCta: {
       label: 'Ver proyectos',
       href: '/#proyectos',
@@ -43,39 +43,31 @@ export const portfolioData = {
         description:
           'Creación de colecciones, investigación, marca y proyectos creativos.',
       },
-      {
-        title: 'Base',
-        value: 'Medellín',
-        description:
-          'Una mirada local con proyección profesional dentro del sector moda.',
-      },
     ],
   },
   about: {
     eyebrow: 'Sobre mí',
-    title: 'Una diseñadora emergente con criterio conceptual, sensibilidad textil y visión de marca.',
+    title: 'Diseñadora enfocada en la construcción de significado, interesada en saber cómo las ideas toman forma.',
     description:
-      'Daniela Aguirre es estudiante de último semestre de Diseño y Gestión de la Moda y el Textil, con énfasis en la creación de empresas de base creativa.',
+      'Soy Daniela Aguirre, estudiante de último semestre de diseño gestión de la moda y el textil de la Universidad de Medellín, con énfasis en creación de empresa de base creativa y un gran interés por transformar ideas en piezas.',
     story: [
-      'Su proceso parte de la investigación, la observación del contexto y la construcción de narrativas visuales que conectan cuerpo, materialidad e identidad.',
-      'Desde su formación en la Universidad de Medellín, ha fortalecido una mirada integral que une desarrollo de colecciones, gestión de proyectos creativos y pensamiento estratégico aplicado a la moda.',
-      'Su perfil combina precisión técnica, comunicación clara y una sensibilidad contemporánea para construir propuestas con intención estética y coherencia conceptual.',
+      'Soy una diseñadora que trabaja desde la construcción de sentido más que desde la forma misma. Mi proceso inicia en la historia, el mensaje y el concepto, porque entiendo la moda como un lenguaje capaz de transmitir, cuestionar y comunicar algo que realmente genere impacto. Me interesa crear prendas que no se queden en lo visual, sino que tengan significado y generen una conexión con quien las observa o las habita. Mi enfoque es conceptual y narrativo, busco construir ideas que se traduzcan en experiencias. Cada proyecto lo abordo como un proceso de exploración donde el pensamiento, la intención y la materialización se entrelazan para dar lugar a una moda que dice algo, que propone y que deja una sensación más allá de lo evidente.',
     ],
     pillars: [
       {
-        title: 'Investigación y concepto',
+        title: 'Punto de partida',
         description:
-          'Construcción de propuestas a partir de observación, análisis de tendencias, referentes culturales y narrativa visual.',
+          'Todo comienza con una inquietud. Algo que no termino de entender o que me genera curiosidad. Investigo, observo y conecto ideas hasta construir una base que me permita desarrollar desde ahí.',
       },
       {
-        title: 'Colecciones con identidad',
+        title: 'Lo que atraviesa el trabajo',
         description:
-          'Desarrollo de proyectos coherentes en silueta, materiales, intención, styling y lenguaje de marca.',
+          'No me interesa hacer piezas vacías. Busco que cada colección tenga algo que decir, que comunique una idea o una emoción y que genere una relación con quien la ve o la usa.',
       },
       {
-        title: 'Gestión creativa',
+        title: 'Cómo toma forma',
         description:
-          'Planificación de procesos, organización de entregables y coordinación de proyectos con enfoque profesional.',
+          'Aterrizo esas ideas en decisiones concretas como silueta, proporción, textura. Cada elección responde a una intención, hasta que todo se alinea en una pieza que sostiene lo que quiero expresar.',
       },
     ],
   },
@@ -267,15 +259,6 @@ export const portfolioData = {
         'Nominación en la categoría Moda por un proyecto de biovestidos.',
     },
   ],
-  education: {
-    eyebrow: 'Educación',
-    institution: 'Universidad de Medellín',
-    location: 'Medellín, Colombia',
-    degree: 'Diseño y Gestión de la Moda y el Textil',
-    average: '4.4',
-    stage: 'Último semestre',
-    emphasis: 'Énfasis en creación de empresas de base creativa',
-  },
   skills: {
     groups: [
       {

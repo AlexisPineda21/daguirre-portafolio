@@ -10,7 +10,6 @@ function HomePage({ data }) {
       <HeroSection hero={data.hero} />
       <AboutSection
         about={data.about}
-        education={data.education}
         skills={data.skills}
         languages={data.languages}
       />
