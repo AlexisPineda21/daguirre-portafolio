@@ -73,9 +73,9 @@ export const portfolioData = {
   },
   projectsIntro: {
     eyebrow: 'Proyectos',
-    title: 'Colecciones construidas desde concepto, oficio y exploración visual.',
+    title: 'Colecciones que surgen de preguntas y de la necesidad de poner ideas en forma.',
     description:
-      'Cada proyecto abre un universo propio. Selecciona una colección para navegar hacia su página de detalle.',
+      'Este portafolio es un diario. Un lugar donde voy dejando fragmentos de mí a través de cada colección. Cada una responde a una forma distinta de ver, de pensar y de habitar. No son solo prendas, son registros de ideas, de inquietudes y de formas de habitar. Porque no soy una sola cosa, y este proceso tampoco lo es.',
   },
   projects: [
     {
