@@ -1,3 +1,5 @@
+import profilePhoto from '../../images/Foto de perfil/foto-perfil.jpg?url'
+
 export const portfolioData = {
   navigation: [
     { label: 'Sobre mí', href: '/#sobre-mi' },
@@ -22,8 +24,8 @@ export const portfolioData = {
       href: '/#contacto',
     },
     image: {
-      src: '',
-      alt: 'Placeholder editorial para Daniela Aguirre',
+      src: profilePhoto,
+      alt: 'Retrato de Daniela Aguirre',
       eyebrow: 'Lookbook personal',
       label: 'Daniela Aguirre',
       caption:
