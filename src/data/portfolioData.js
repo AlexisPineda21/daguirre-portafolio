@@ -88,7 +88,7 @@ export const portfolioData = {
       year: '2024',
       category: 'Pasarela / Concepto',
       description:
-        'Exploración de siluetas fragmentadas y construcción textil desde la transformación de la prenda, con una mirada experimental y contemporánea.',
+        'Deconstrucción nace de la necesidad de cuestionar lo que se nos ha enseñado a ser. Propone abrir un nuevo discurso sobre las masculinidades, uno más amplio, más libre, donde otras formas de habitar el cuerpo puedan existir sin ser invalidadas. Es una respuesta a los estándares que históricamente han limitado, juzgado y violentado todo aquello que se sale de lo establecido. A quienes no encajan, a quienes incomodan, a quienes han tenido que silenciarse para ser aceptados. A través del vestuario, el proyecto busca visibilizar esas tensiones y dar lugar a otras expresiones. No como una tendencia, sino como una postura, la de permitir que cada cuerpo se construya desde su propia forma de ser.',
       details: [
         'Trabaja la prenda como una estructura abierta, capaz de ser reinterpretada desde cortes, capas y desplazamientos.',
         'Propone una lectura visual donde la forma se desmonta para revelar nuevas posibilidades de composición.',
@@ -114,7 +114,7 @@ export const portfolioData = {
       year: '2024',
       category: 'Colección / Enfoque social',
       description:
-        'Propuesta que conecta memoria, tejido social e identidad a través de una narrativa sensible y una lectura del diseño como herramienta de conversación.',
+        'Nosotros nos erguimos con orgullo en nuestra historia, tejida con hilos de resistencia, desde los confines de la esclavitud mis antepasados lucharon contra las cadenas que los detenían. No sé quién soy… pero en la historia pienso encontrarme, mi familia proviene de un linaje lleno de cultura y memoria, ramificaciones que construyeron comunidades e historias de lucha y resiliencia, de ella hago parte. Hoy quiero conmemorarlos y festejarlos, haciéndolos parte de este camino creativo, soy heredera de aquellos que gritaron cantos de libertad y a través de hilos y tejidos continuare con este testimonio de fortaleza.',
       details: [
         'La colección se construye desde la relación entre memoria, vínculo y materialidad.',
         'Explora el acto de entrelazar como gesto simbólico y como recurso visual dentro de la prenda.',
@@ -140,7 +140,7 @@ export const portfolioData = {
       year: '2025',
       category: 'Colección infantil',
       description:
-        'Colección infantil que interpreta ligereza, juego y fantasía desde un lenguaje visual delicado, limpio y contemporáneo.',
+        'La colección se inspira en los sueños y aspiraciones de los niños de la fundación Caespro, creando un mundo imaginario donde ellos son los héroes de sus propias historias. No se trata solo de ropa, sino de una narrativa visual que celebra la esperanza, la creatividad y el potencial ilimitado de cada niño. A través de diseños coloridos, estampados creativos y detalles evocadores, cada prenda refleja el papel especial que cada uno tiene en este universo de fantasía. La colección resalta la capacidad de los niños para transformar su realidad mediante el arte y la autoexpresión, especialmente aquellos que han crecido en entornos difíciles, permitiéndoles pintar un mundo lleno de sueños, esperanza y libertad.',
       details: [
         'La colección traduce la imaginación infantil en formas suaves, proporciones delicadas y gestos lúdicos.',
         'Su universo visual trabaja ligereza, volumen y una narrativa poética alrededor del vestir.',
@@ -166,7 +166,7 @@ export const portfolioData = {
       year: '2025',
       category: 'Biovestido / Innovación material',
       description:
-        'Investigación sobre biovestidos y superficies vivas que propone una relación entre moda, naturaleza y experimentación material.',
+        'Piel viva surge de cuestionar la idea de separación. Durante mucho tiempo hemos entendido el cuerpo humano como algo aislado, como un límite que nos distancia de lo que nos rodea. Este proyecto propone lo contrario, pensar el cuerpo como un territorio en relación, permeable, atravesado por lo vivo. Aquí, lo humano no se impone ni se separa, sino que coexiste. Se desdibuja la frontera entre lo propio y lo externo, entre lo que controlamos y lo que simplemente sucede. El vestir deja de ser una barrera y se convierte en una forma de habitar, de relacionarse, de entender el cuerpo desde otra sensibilidad. Piel viva nos invita a repensar cómo nos ubicamos en el mundo, a reconocer lo vivo como algo que no está afuera, sino que nos atraviesa, nos sostiene y nos transforma.',
       details: [
         'Explora la posibilidad de que la prenda funcione como una superficie viva y cambiante.',
         'Relaciona cuerpo, textil y naturaleza desde una perspectiva experimental del vestir.',
@@ -192,7 +192,7 @@ export const portfolioData = {
       year: '2025',
       category: 'Colección / Identidad',
       description:
-        'Colección que explora la identidad como un territorio cambiante, construido por capas, contrastes y gestos íntimos.',
+        'La obsesión por alcanzar la perfección se convierte en una dinámica que desgarra la identidad hasta fragmentarla en múltiples versiones de uno mismo. Las personas comienzan a habitar diferentes personajes, cada uno diseñado para encajar en las expectativas ajenas. Estas capas funcionan como máscaras que prometen aceptación, pero que al mismo tiempo quebrantan la autenticidad, generando un vacío interno cada vez más profundo. Donde las voces se multiplican y disputan el control, transformando el cuerpo en un campo de batalla entre lo que se es, lo que se espera ser y lo que jamás se podrá alcanzar.',
       details: [
         'Aborda el yo como una composición múltiple donde conviven fuerza, vulnerabilidad y transformación.',
         'Trabaja una narrativa visual basada en capas, presencia corporal y variaciones de carácter.',

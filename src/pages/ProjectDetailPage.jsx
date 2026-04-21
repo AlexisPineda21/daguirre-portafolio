@@ -6,7 +6,7 @@ import { getProjectImages } from '../data/projectImages'
 import { getProjectPath } from '../utils/projectRoutes'
 
 const projectInfoPanelClass =
-  'rounded-[2rem] border hairline bg-[rgba(255,251,246,0.94)] p-6 shadow-[0_28px_80px_rgba(18,13,10,0.12)] backdrop-blur-sm sm:p-8'
+  'flex h-full flex-col justify-center rounded-[2rem] border hairline bg-[rgba(255,251,246,0.94)] p-6 shadow-[0_28px_80px_rgba(18,13,10,0.12)] backdrop-blur-sm sm:p-8 lg:min-h-[760px]'
 
 const projectNavPanelClass =
   'group rounded-[1.8rem] border hairline bg-[rgba(255,251,246,0.92)] p-6 shadow-[0_24px_70px_rgba(18,13,10,0.1)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[rgba(255,251,246,0.98)]'
@@ -32,34 +32,15 @@ function ProjectDetailPage({ project, previousProject, nextProject }) {
           </Reveal>
 
           <div className="mt-10">
-            <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
-              <Reveal className="space-y-8">
+            <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr]">
+              <Reveal className="h-full">
                 <div className={projectInfoPanelClass}>
                   <h1 className="font-display max-w-3xl text-[4.2rem] leading-[0.86] text-[color:var(--ink)] sm:text-[6.4rem]">
                     {project.title}
                   </h1>
-                  <p className="mt-6 max-w-2xl text-lg leading-8 text-[color:var(--ink-soft)] sm:text-xl">
+                  <p className="mt-7 max-w-2xl text-base leading-8 text-[color:var(--ink-soft)] sm:text-lg">
                     {project.description}
                   </p>
-                </div>
-
-                <div className={projectInfoPanelClass}>
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
-                    Concepto del proyecto
-                  </p>
-                  <div className="mt-7 space-y-4">
-                    {project.details.map((detail, index) => (
-                      <div
-                        key={detail}
-                        className="grid grid-cols-[42px_1fr] gap-4 border-t border-[color:var(--line)] pt-4 text-sm leading-7 text-[color:var(--ink-soft)] first:border-0 first:pt-0 sm:text-base"
-                      >
-                        <span className="font-display text-3xl leading-none text-[rgba(125,99,80,0.5)]">
-                          {String(index + 1).padStart(2, '0')}
-                        </span>
-                        <p>{detail}</p>
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </Reveal>
 
