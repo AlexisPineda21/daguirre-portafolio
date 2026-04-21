@@ -55,38 +55,35 @@ function AboutSection({ about, skills, languages }) {
           </div>
         </div>
 
-        <div className="mt-6 grid gap-6 lg:grid-cols-12">
-          <Reveal
-            delay={0.08}
-            className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:col-span-7"
-          >
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
-              Habilidades
-            </p>
-            <div className="mt-6 space-y-6">
-              {skills.groups.map((group) => (
-                <div key={group.title}>
-                  <h3 className="font-display text-3xl leading-none text-[color:var(--ink)]">
-                    {group.title}
-                  </h3>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {group.items.map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full border hairline bg-white/35 px-3 py-1.5 text-xs leading-5 text-[color:var(--ink-soft)]"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
+        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {skills.groups.map((group, index) => (
+            <Reveal
+              key={group.title}
+              delay={0.08 * (index + 1)}
+              className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8"
+            >
+              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                Habilidades
+              </p>
+              <h3 className="font-display mt-6 text-3xl leading-none text-[color:var(--ink)]">
+                {group.title}
+              </h3>
+              <ul className="mt-6 space-y-3">
+                {group.items.map((item) => (
+                  <li
+                    key={item}
+                    className="border-t border-[color:var(--line)] pt-3 text-sm leading-7 text-[color:var(--ink-soft)] first:border-0 first:pt-0"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          ))}
 
           <Reveal
-            delay={0.16}
-            className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:col-span-5"
+            delay={0.08 * (skills.groups.length + 1)}
+            className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 md:col-span-2 lg:col-span-1"
           >
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
               Idiomas

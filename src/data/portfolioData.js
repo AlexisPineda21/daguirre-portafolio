@@ -12,7 +12,7 @@ export const portfolioData = {
     tagline:
       'Moda con enfoque conceptual y sensibilidad material, entendida como un medio para pensar y comunicar ideas.',
     description:
-      'Desarrollo proyectos que conectan investigación, narrativa y creación, dando lugar a conceptos e ideas que se traducen en piezas con significado.',
+      'Desarrollo proyectos que conectan investigación, narrativa y creación, dando lugar a conceptos que se traducen en piezas con significado.',
     primaryCta: {
       label: 'Ver proyectos',
       href: '/#proyectos',

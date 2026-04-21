@@ -27,20 +27,20 @@ function HeroSection({ hero }) {
               </p>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-3">
+            <div className="grid max-w-3xl gap-5 sm:grid-cols-2">
               {hero.highlights.map((item, index) => (
                 <Reveal
                   key={item.title}
                   delay={0.08 * (index + 1)}
-                  className="glass-panel rounded-[1.6rem] border hairline p-5"
+                  className="glass-panel min-h-[210px] rounded-[1.8rem] border hairline p-6 sm:p-7"
                 >
                   <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-[color:var(--accent)]">
                     {item.title}
                   </p>
-                  <p className="font-display mt-4 text-[2.1rem] leading-none text-[color:var(--ink)]">
+                  <p className="font-display mt-5 text-[2.4rem] leading-none text-[color:var(--ink)] sm:text-[2.8rem]">
                     {item.value}
                   </p>
-                  <p className="mt-3 text-sm leading-6 text-[color:var(--ink-soft)]">
+                  <p className="mt-4 text-sm leading-7 text-[color:var(--ink-soft)]">
                     {item.description}
                   </p>
                 </Reveal>
