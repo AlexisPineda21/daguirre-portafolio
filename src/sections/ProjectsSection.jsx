@@ -64,19 +64,13 @@ function ProjectsSection({ sectionIntro, projects }) {
                       <ArrowUpRight size={17} />
                     </div>
                     <div className="absolute bottom-4 left-4 right-4">
-                      <p className="text-[0.64rem] font-semibold uppercase tracking-[0.24em] text-white/75">
-                        {project.year}
-                      </p>
-                      <h3 className="font-display mt-2 text-3xl leading-none text-white">
+                      <h3 className="font-display text-3xl leading-none text-white">
                         {project.title}
                       </h3>
                     </div>
                   </div>
                   <div className="px-5 pb-6 pt-2">
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[color:var(--accent)]">
-                      {project.category}
-                    </p>
-                    <p className="mt-3 text-sm leading-6 text-[color:var(--ink-soft)]">
+                    <p className="text-sm leading-6 text-[color:var(--ink-soft)]">
                       Ver proyecto completo
                     </p>
                   </div>

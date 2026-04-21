@@ -211,9 +211,9 @@ export const portfolioData = {
   ],
   recognitionsIntro: {
     eyebrow: 'Reconocimientos',
-    title: 'Hitos que reflejan proyección, presencia en escenarios de moda y validación del proceso creativo.',
+    title: 'Algunos momentos que han marcado mi recorrido.',
     description:
-      'Una selección de participaciones, publicaciones y nominaciones que acompañan el crecimiento profesional de Daniela.',
+      'Espacios, publicaciones y reconocimientos que se han ido sumando en el camino...',
   },
   recognitions: [
     {
@@ -301,8 +301,7 @@ export const portfolioData = {
   contact: {
     eyebrow: 'Contacto',
     title: 'Disponible para oportunidades laborales, colaboraciones y nuevos proyectos.',
-    description:
-      'Si quieres conocer más sobre su trabajo, conversar sobre una vacante o explorar una colaboración, este portafolio está abierto al diálogo.',
+    description: '',
     email: 'daguirre434@soyudemedellin.edu.co',
     phone: '+57 3107043573',
     phoneHref: 'tel:+573107043573',
@@ -311,13 +310,13 @@ export const portfolioData = {
     social: [
       {
         label: 'Instagram',
-        value: 'Placeholder disponible para agregar perfil',
-        href: '',
+        value: '@dani_aguirren',
+        href: 'https://www.instagram.com/dani_aguirren?igsh=dXB6ZXF0c3hocThn&utm_source=qr',
       },
       {
         label: 'LinkedIn',
-        value: 'Placeholder disponible para agregar perfil',
-        href: '',
+        value: 'daniela-aguirre-nuñez',
+        href: 'https://www.linkedin.com/in/daniela-aguirre-nuñez-9478473ab',
       },
     ],
   },

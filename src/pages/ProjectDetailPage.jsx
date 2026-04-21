@@ -29,16 +29,7 @@ function ProjectDetailPage({ project, previousProject, nextProject }) {
             <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
               <Reveal className="space-y-8">
                 <div className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="rounded-full border hairline px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[color:var(--accent)]">
-                      {project.year}
-                    </span>
-                    <span className="text-[0.72rem] uppercase tracking-[0.22em] text-[color:var(--ink-soft)]">
-                      {project.category}
-                    </span>
-                  </div>
-
-                  <h1 className="font-display mt-7 max-w-3xl text-[4.2rem] leading-[0.86] text-[color:var(--ink)] sm:text-[6.4rem]">
+                  <h1 className="font-display max-w-3xl text-[4.2rem] leading-[0.86] text-[color:var(--ink)] sm:text-[6.4rem]">
                     {project.title}
                   </h1>
                   <p className="mt-6 max-w-2xl text-lg leading-8 text-[color:var(--ink-soft)] sm:text-xl">

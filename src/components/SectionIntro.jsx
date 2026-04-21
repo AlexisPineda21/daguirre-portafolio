@@ -7,9 +7,11 @@ function SectionIntro({ eyebrow, title, description, className = '' }) {
       <h2 className="font-display max-w-3xl text-4xl leading-[0.96] text-[color:var(--ink)] sm:text-5xl lg:text-[3.6rem]">
         {title}
       </h2>
-      <p className="max-w-2xl text-base leading-7 text-[color:var(--ink-soft)] sm:text-lg">
-        {description}
-      </p>
+      {description ? (
+        <p className="max-w-2xl text-base leading-7 text-[color:var(--ink-soft)] sm:text-lg">
+          {description}
+        </p>
+      ) : null}
     </div>
   )
 }
