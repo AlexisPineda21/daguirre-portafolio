@@ -11,6 +11,9 @@ import PortfolioImage from './PortfolioImage'
 
 const MotionImg = motion.img
 
+const expandButtonClass =
+  'inline-flex items-center gap-1 rounded-full border border-white/30 bg-black/20 px-2 py-1 text-[0.58rem] font-semibold uppercase tracking-[0.14em] text-white/90 opacity-0 backdrop-blur-md transition-all duration-300 hover:bg-black/32 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/70 group-hover:opacity-100 group-focus-within:opacity-100'
+
 function ProjectImageCarousel({
   images = [],
   fallbackImage,
@@ -124,12 +127,12 @@ function ProjectImageCarousel({
 
               <button
                 type="button"
-                className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-black/20 px-2.5 py-1.5 text-[0.56rem] font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur-md transition-colors duration-300 hover:bg-black/32 focus:outline-none focus:ring-2 focus:ring-white/70"
+                className={expandButtonClass}
                 aria-label={`Expandir imagen de ${projectTitle}`}
                 onClick={() => setIsLightboxOpen(true)}
               >
                 <span className="hidden sm:inline">Expandir</span>
-                <Maximize2 size={12} />
+                <Maximize2 size={10} />
               </button>
             </div>
           </div>
@@ -176,12 +179,12 @@ function ProjectImageCarousel({
         <div className="absolute right-4 top-4">
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-black/20 px-2.5 py-1.5 text-[0.56rem] font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur-md transition-colors duration-300 hover:bg-black/32 focus:outline-none focus:ring-2 focus:ring-white/70"
+            className={expandButtonClass}
             aria-label={`Expandir imagen de ${projectTitle}`}
             onClick={() => setIsLightboxOpen(true)}
           >
             <span className="hidden sm:inline">Expandir</span>
-            <Maximize2 size={12} />
+            <Maximize2 size={10} />
           </button>
         </div>
       ) : null}
