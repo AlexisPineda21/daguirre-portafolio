@@ -2,7 +2,7 @@ import Container from '../components/Container'
 import Reveal from '../components/Reveal'
 import SectionIntro from '../components/SectionIntro'
 
-function AboutSection({ about, education, skills, languages }) {
+function AboutSection({ about, skills, languages }) {
   return (
     <section id="sobre-mi" className="scroll-mt-32 py-16 sm:py-24 lg:py-28">
       <Container>
@@ -56,23 +56,9 @@ function AboutSection({ about, education, skills, languages }) {
         </div>
 
         <div className="mt-6 grid gap-6 lg:grid-cols-12">
-          <Reveal className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:col-span-5">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
-              Educación
-            </p>
-            <h3 className="font-display mt-6 text-4xl leading-none text-[color:var(--ink)]">
-              {education.degree}
-            </h3>
-            <p className="mt-5 text-base leading-7 text-[color:var(--ink-soft)]">
-              {education.institution} - {education.location}. Actualmente cursa
-              el {education.stage.toLowerCase()} con promedio{' '}
-              {education.average}, y un {education.emphasis.toLowerCase()}.
-            </p>
-          </Reveal>
-
           <Reveal
             delay={0.08}
-            className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:col-span-4"
+            className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:col-span-7"
           >
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
               Habilidades
@@ -100,7 +86,7 @@ function AboutSection({ about, education, skills, languages }) {
 
           <Reveal
             delay={0.16}
-            className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:col-span-3"
+            className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:col-span-5"
           >
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
               Idiomas
