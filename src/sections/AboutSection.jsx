@@ -15,7 +15,7 @@ function AboutSection({ about, skills, languages }) {
           />
         </Reveal>
 
-        <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+        <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
           <Reveal className="glass-panel rounded-[2rem] border hairline p-6 sm:p-8 lg:p-10">
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
               Historia
@@ -32,10 +32,10 @@ function AboutSection({ about, skills, languages }) {
             </div>
           </Reveal>
 
-          <div className="grid gap-5">
+          <div className="grid gap-5 lg:h-full lg:grid-rows-3">
             {about.pillars.map((item, index) => (
               <Reveal key={item.title} delay={0.08 * (index + 1)}>
-                <article className="glass-panel rounded-[1.8rem] border hairline p-6 sm:p-8">
+                <article className="glass-panel h-full rounded-[1.8rem] border hairline p-6 sm:p-8">
                   <div className="flex items-start gap-5">
                     <p className="font-display text-4xl leading-none text-[rgba(125,99,80,0.55)]">
                       {String(index + 1).padStart(2, '0')}

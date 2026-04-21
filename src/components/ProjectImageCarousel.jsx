@@ -124,12 +124,12 @@ function ProjectImageCarousel({
 
               <button
                 type="button"
-                className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-black/20 px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-white/90 backdrop-blur-md transition-colors duration-300 hover:bg-black/32 focus:outline-none focus:ring-2 focus:ring-white/70"
+                className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-black/20 px-2.5 py-1.5 text-[0.56rem] font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur-md transition-colors duration-300 hover:bg-black/32 focus:outline-none focus:ring-2 focus:ring-white/70"
                 aria-label={`Expandir imagen de ${projectTitle}`}
                 onClick={() => setIsLightboxOpen(true)}
               >
                 <span className="hidden sm:inline">Expandir</span>
-                <Maximize2 size={13} />
+                <Maximize2 size={12} />
               </button>
             </div>
           </div>
@@ -176,12 +176,12 @@ function ProjectImageCarousel({
         <div className="absolute right-4 top-4">
           <button
             type="button"
-            className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-black/20 px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-white/90 backdrop-blur-md transition-colors duration-300 hover:bg-black/32 focus:outline-none focus:ring-2 focus:ring-white/70"
+            className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-black/20 px-2.5 py-1.5 text-[0.56rem] font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur-md transition-colors duration-300 hover:bg-black/32 focus:outline-none focus:ring-2 focus:ring-white/70"
             aria-label={`Expandir imagen de ${projectTitle}`}
             onClick={() => setIsLightboxOpen(true)}
           >
             <span className="hidden sm:inline">Expandir</span>
-            <Maximize2 size={13} />
+            <Maximize2 size={12} />
           </button>
         </div>
       ) : null}
