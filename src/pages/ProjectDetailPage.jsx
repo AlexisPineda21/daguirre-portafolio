@@ -6,10 +6,10 @@ import { getProjectImages } from '../data/projectImages'
 import { getProjectPath } from '../utils/projectRoutes'
 
 const projectInfoPanelClass =
-  'flex h-full flex-col justify-center rounded-[2rem] border hairline bg-[rgba(255,251,246,0.94)] p-6 shadow-[0_28px_80px_rgba(18,13,10,0.12)] backdrop-blur-sm sm:p-8 lg:min-h-[760px]'
+  'flex h-full flex-col justify-center rounded-[2rem] border hairline bg-[color:var(--panel-strong)] p-6 shadow-[0_28px_80px_rgba(18,13,10,0.12)] sm:p-8 lg:min-h-[760px]'
 
 const projectNavPanelClass =
-  'group rounded-[1.8rem] border hairline bg-[rgba(255,251,246,0.92)] p-6 shadow-[0_24px_70px_rgba(18,13,10,0.1)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[rgba(255,251,246,0.98)]'
+  'group rounded-[1.8rem] border hairline bg-[color:var(--panel-strong)] p-6 shadow-[0_24px_70px_rgba(18,13,10,0.1)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white'
 
 function ProjectDetailPage({ project, previousProject, nextProject }) {
   const projectImages = getProjectImages(project.imageFolder, project.title)
